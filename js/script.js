@@ -37,5 +37,24 @@ $(document).ready(function(){
         }
     });
 
+    $('.artlist-filter a').click(function(){
+        var selector = $(this).attr('data-filter');
+        $('.artlist-filter a').removeClass('active');
+        $(this).addClass('active');
+        $('.artprojects-wrapper').isotope({
+            filter:selector
+        });
+        return false;
+
+    })
+    $('.popup-artimage').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        gallery:{
+            enabled: true,
+            
+        }
+    });
+
 
 });  
