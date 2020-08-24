@@ -12,23 +12,23 @@
 
 
 $(document).ready(function(){
-    $('.projects-wrapper').isotope({
+    $('.certiprojects-wrapper').isotope({
         filter:'*',
         layoutMode:'masonry'
     });
 
-    $('.list-filter a').click(function(){
+    $('.certilist-filter a').click(function(){
         var selector = $(this).attr('data-filter');
-        $('.list-filter a').removeClass('active');
+        $('.certilist-filter a').removeClass('active');
         $(this).addClass('active');
-        $('.projects-wrapper').isotope({
+        $('.certiprojects-wrapper').isotope({
             filter:selector
         });
         return false;
 
     })
 
-    $('.popup-image').magnificPopup({
+    $('.certipopup-image').magnificPopup({
         type: 'image',
         closeOnContentClick: true,
         gallery:{

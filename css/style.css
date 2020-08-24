@@ -366,25 +366,25 @@ html {
 
 
 
-.work{
+.certiwork{
     padding-top: 100px;
     padding-bottom: 70px;
     
 }
 
-.work .list-filter{
+.certiwork .certilist-filter{
     margin-bottom: 30px;
     padding: 0;
 
 }
 
-.work .list-filter li{
+.certiwork .certilist-filter li{
     list-style: none;
     display: inline-block;
 }
 
 
-.work .list-filter a{
+.certiwork .certilist-filter a{
     display: block;
     color: black;
     padding: 0 10px;
@@ -397,22 +397,22 @@ html {
 
 }
 
-.work .list-filter a.active {
+.certiwork .certilist-filter a.active {
     color:#c9a04f;
 
 }
 
-.work .list-filter a:hover{
+.certiwork .certilist-filter a:hover{
     color: #c9a04f;
 
 }
 
-.projects-wrapper > div{
+.certiprojects-wrapper > div{
     margin: 25px 0 0 0;
     
 }
 
-.work-box{
+.certiwork-box{
     position: relative;
     overflow: hidden;
     display: block;
@@ -420,29 +420,29 @@ html {
     box-shadow: 1px 2px 10px rgb(0,0,0,0.1);
 }
 
-.work-box a{
+.certiwork-box a{
     display: inline-block;
     position: relative;
 
 }
 
 
-.work-box:hover .work-overlay{
+.certiwork-box:hover .certiwork-overlay{
     opacity: 0.5;
     transform:scale(1);
 }
 
-.work-box:hover .work-caption{
+.certiwork-box:hover .certiwork-caption{
     opacity: 1;
 }
 
-.work-box:hover .work-img{
+.certiwork-box:hover .certiwork-img{
     transform: scale(1);
     width: 100%;
     transition: all 2s linear;
 }
 
-.work-overlay{
+.certiwork-overlay{
     position: absolute;
     top: 0;
     right: 0;
@@ -455,18 +455,18 @@ html {
 
 }
 
-.work-overlay h5{
+.certiwork-overlay h5{
     color: white;
 }
 
-.work-overlay p{
+.certiwork-overlay p{
     font-size: 12px;
     letter-spacing:1.5px;
     margin-bottom: 0;
     color: white;
 }
 
-.work-overlay .work-caption{
+.certiwork-overlay .certiwork-caption{
     position: absolute;
     top:50%;
     transform: translate(-50%) ;
@@ -476,7 +476,7 @@ html {
 
 }
 
-.overlay-icons{
+.certioverlay-icons{
     border: 2px solid white;
     color: white;
     font-size: 22px;
@@ -489,7 +489,7 @@ html {
 }
 
 
-.overlay-icons:hover{
+.certioverlay-icons:hover{
     background-color: white;
     color: #c9a04f;
     border: 2px solid white;
@@ -497,7 +497,7 @@ html {
 }
 
 @media only screen and (max-width:768px){
-    .list-filter a{
+    .certilist-filter a{
         padding: 0 5px;
         margin: 4px 5px;
         font-size: 14px;
