@@ -223,11 +223,39 @@ html {
 }
 
 
+.skill{
+    padding-top: 100px;
+    padding-bottom: 80px;
+    
+}
 
+.skillwork-box{
+    width: 100px;
+    height: 100px;
+    
+    margin: 20px;
+    display: block;
+    position: relative;
+   
+    
+    justify-content: center;
+}
+
+.skillwork-box img{
+    width: 70%;
+    height: 70%;
+    margin-top: 5px;
+}
+
+#htmllogo{
+    width: 150px;
+    height: 180px;
+}
 
 .artwork{
     padding-top: 100px;
     padding-bottom: 70px;
+    background-color: #f9f9f9;
     
 }
 
@@ -271,7 +299,7 @@ html {
     
 }
 
-.artwork-box{
+.artwork-box {
     position: relative;
     overflow: hidden;
     display: block;
