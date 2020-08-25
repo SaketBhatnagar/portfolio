@@ -37,6 +37,11 @@ $(document).ready(function(){
         }
     });
 
+    $('.artprojects-wrapper').isotope({
+        filter:'*',
+        layoutMode:'masonry'
+    });
+
     $('.artlist-filter a').click(function(){
         var selector = $(this).attr('data-filter');
         $('.artlist-filter a').removeClass('active');
