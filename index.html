@@ -23,11 +23,76 @@
             <h2><span class="txt-rotate"></span></h2>
               <p>Welcome to My Portfolio</p>
               <div class="getintouch">
-                <div><a href="https://wa.me/+918800425273" class="btn">Get in Touch</a> </div>
+                <div><a class=" btn" id="touch">Get in Touch</a> </div>
               </div>
           </div>
     </div>
   </section>
+
+  <div id="touchmodal" class="modal fade" >
+    <div class="modal-dialog modal-lg" >
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Let's Keep In Touch</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                  <form class="row g-3 " name="google-sheet" autocomplete="off" method="POST">
+                    <div class="col-md-4 position-relative">
+                      
+                      <input name="name" type="text" class="form-control" id="validationTooltip01" placeholder="Name" value="" required>
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+                   <br><br>
+
+                    <div class="col-md-4 position-relative">
+                      
+                      <input name="email" type="email" class="form-control" id="validationTooltip02"placeholder="Email" value="" required>
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+
+                    <br><br>
+                    <div class="col-md-4 position-relative">
+                      
+                      <input name="phn" type="number" class="form-control " id="validationTooltip02" placeholder="Phone number" value="" required>
+                      
+                    </div>
+
+                    <br><br>
+                    <div class="col-md-12 position-relative">
+                      
+                      <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Message : Hello! Whatsapp" rows="3" required></textarea>
+                    </div>
+                      
+                   <!--   <div class="row"></div>
+                          <div class="mdi mdi-linkedin mdi-36px col-1 position-relative"></div>
+                          <div class="mdi mdi-facebook mdi-36px col-1 position-relative"></div>
+                   -->
+            
+                          <div class="col-md-3 offset-md-9"  style="margin-top:3%">
+                            <button name="submit" class="btn btn-primary" type="submit">Submit</button>
+                          </div>
+                     <br>
+                    <!--</div>-->
+                    
+                    
+                    
+                  </form>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
 
   <section class="services" id="services">
       <div class="container">

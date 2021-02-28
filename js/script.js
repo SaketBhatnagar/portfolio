@@ -61,5 +61,23 @@ $(document).ready(function(){
         }
     });
 
+    $("#touch").click(function () {
+        $('#touchmodal').modal('toggle')
+    });
+
+
+    
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbzzGECUXaZMCXLffNJTTj8YO_7jPUn6L2DFzHSMLHG6HdbMmkXcP6Wz/exec'
+   const form = document.forms['google-sheet']
+   var name = document.getElementById('name');
+   form.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => alert("Thanks for Contacting me.."))
+       .catch(error => console.error('Error!', error.message))
+   })
+ 
+
+
 
 });  
