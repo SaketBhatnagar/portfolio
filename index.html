@@ -23,15 +23,15 @@
             <h2><span class="txt-rotate"></span></h2>
               <p>Welcome to My Portfolio</p>
               <div class="getintouch">
-                <div><a class=" btn" id="touch">Get in Touch</a> </div>
+                <div><a href="https://wa.link/v3txuy" class=" btn" id="touch">Get in Touch</a> </div>
               </div>
           </div>
     </div>
   </section>
-
+<!--
   <div id="touchmodal" class="modal fade" >
     <div class="modal-dialog modal-lg" >
-        <!-- Modal content-->
+         Modal content
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Let's Keep In Touch</h4>
@@ -41,7 +41,7 @@
                   <form class="row g-3 " name="google-sheet" autocomplete="off" method="POST">
                     <div class="col-md-4 position-relative">
                       
-                      <input name="name" type="text" class="form-control" id="validationTooltip01" placeholder="Name" value="" required>
+                      <input name="name" id="name" type="text" class="form-control" id="validationTooltip01" placeholder="Name" value="" required>
                       <div class="valid-tooltip">
                         Looks good!
                       </div>
@@ -69,16 +69,13 @@
                       <textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Message : Hello! Whatsapp" rows="3" required></textarea>
                     </div>
                       
-                   <!--   <div class="row"></div>
-                          <div class="mdi mdi-linkedin mdi-36px col-1 position-relative"></div>
-                          <div class="mdi mdi-facebook mdi-36px col-1 position-relative"></div>
-                   -->
+                     
             
                           <div class="col-md-3 offset-md-9"  style="margin-top:3%">
                             <button name="submit" class="btn btn-primary" type="submit">Submit</button>
                           </div>
                      <br>
-                    <!--</div>-->
+                   
                     
                     
                     
@@ -90,7 +87,7 @@
     </div>
 </div>
 
-
+-->
 
 
 
@@ -592,5 +589,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/toTop.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx371WkXgk4I6R01gRUfPlxgqCQEb3A_9M2vXy14LJF_Ue8mjJLANVB/exec'
+   const form = document.forms['google-sheet']
+   var name = document.getElementById('name');
+   form.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => alert("Thanks for Contacting me.."))
+       .catch(error => console.error('Error!', error.message))
+   })
+  </script>
 </body>
 </html>
